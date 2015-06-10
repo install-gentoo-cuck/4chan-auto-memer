@@ -1,12 +1,15 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*
 from urllib2 import urlopen
 from urllib import urlencode
 from random import choice, randint
 from string import ascii_lowercase, ascii_uppercase
 from time import sleep
 import SimpleHTTPServer, SocketServer, thread
+from datetime import datetime
 
 with open("captchapage.html", "w") as capHTML:
-	fetch = urlopen("http://a.uguu.se/yjlhye_CaptchaPage.html")
+	fetch = urlopen("http://a.loveisover.me/dafocd.html")
 	capHTML.write(fetch.read())
 
 class CaptchaServer(SimpleHTTPServer.SimpleHTTPRequestHandler):
@@ -43,10 +46,15 @@ def createPost(board, threadid, message, captcha, name='Anonymous'):
 def hostCaptcha():
 	handler = CaptchaServer
 	serv = SocketServer.TCPServer(("", 8888), handler)
-	print 'Visit localhost:8888 for the captcha.'
 	serv.serve_forever()
 thread.start_new_thread(hostCaptcha, ())
 
+print '######################'
+print '#  AUTISM SIMULATOR  #'
+print '#        2015        #'
+print '######################'
+print '\n'
+print 'Visit localhost:8888 for the captcha.'
 board = raw_input('Select board: (no / /)\n')
 thread = raw_input('Select thread to shitpost:\n')
 sleep(1)
