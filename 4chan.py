@@ -52,7 +52,7 @@ while True:
 	cap = raw_input('Enter a captcha: ')
 	cv = ['tips fedora ', 'kill yourself ', 'desu ', 'jew ', 'nigger-rigged ', 'cucked ', 'tfw ', 'ITT: ', 'memed ', 'fizz buzzed ']
 	co = ['fedora ', 'jew ', 'nigger ', 'cuck ', 'reddit ', 'tumblr ', 'bane ', 'ITT: ', 'faggot ','meme ', 'autist ', 'waifu ', 'semen demon ', 'fizz buzz ', 'trap ',': the thread ', 'doge ', 'pleb ', 'feel ']
-	com = ['a shit', 'fedora tipping ', 'an-heroing ', 'JUST ', 'jew ', 'nigger ', 'cuck ', 'based ', 'reddit-tier ', 'tumblr-tier ', 'baneposting ', 'literally ', 'faggot ','meme ', 'autistic ', 'fizz buzz-tier ', 'shit tier ', 'god tier ',':the thread ', 'pleb ', 'for free ','objectively ']
+	com = ['a shit', 'fedora tipping ', 'an-heroing ', 'JUST ', 'jew ', 'nigger ', 'cuck ', 'based ', 'reddit-tier ', 'tumblr-tier ', 'baneposting ', 'literally ', 'faggot ','meme ', 'autistic ', 'fizz buzz-tier ', 'shit tier ', 'god tier ',':the thread ', 'pleb ', 'for free ','objectively ' 'tbh ']
 	cg = ['Argentina is white', 'jet fuel can\'t melt steel beams','install gentoo', 'ayy lmao', 'it\'s happening', 'REEEEEEEEEEEEEEEEEEEEEEEEEEE', 'huehuehuehuehue', 'umad?', '''>>>/pol/''']
 	go = ''
 	out = ''
