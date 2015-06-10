@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="../static/skeleton.css">
+    <title>4chan Captcha</title>
+
+    <script type="text/javascript">
+        var onloadCallback = function() {
+            grecaptcha.render('html_element', {
+                              'sitekey' : '6Ldp2bsSAAAAAAJ5uyx_lx34lJeEpTLVkP5k04qc',
+                              'callback' : dataCallback,
+                              });
+        };
+    </script>
+    <script type="text/javascript">
+        var dataCallback = function(authResult) {
+            document.getElementById("result").innerHTML = authResult;
+        };
+    </script>
+
+    <style>
+      #board {
+        width: 30%;
+      }
+      #post-content {
+        width: 100%;
+        height: 100%;
+      }
+    </style>
+    <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit"></script>
+  </head>
+  <body>
+    <form name="myform" action="" method="post">
+<div style="
+    display: table;
+    ">
+    <div style="width: 304px; height: 78px;">
+        <div id="html_element"></div>
+    </div>
+</form>
+  <p style="color: red;"> Copy inside |</p><p id="result"></p><p style="color: red;">|</p>
+  </body>
+</html>
