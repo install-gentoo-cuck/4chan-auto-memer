@@ -14,12 +14,12 @@ with open("captchapage.html", "w") as capHTML:
 	capHTML.write(fetch.read())
 
 class CaptchaServer(SimpleHTTPServer.SimpleHTTPRequestHandler):
-    def do_GET(self):
-        if self.path == '/':
-            self.path = '/captchapage.html'
-        return SimpleHTTPServer.SimpleHTTPRequestHandler.do_GET(self)
-    def log_message(self, format, *args):
-    	pass
+	def do_GET(self):
+		if self.path == '/':
+			self.path = '/captchapage.html'
+		return SimpleHTTPServer.SimpleHTTPRequestHandler.do_GET(self)
+	def log_message(self, format, *args):
+		pass
 
 def createPost(board, threadid, message, captcha, name='Anonymous'):
 	url = 'https://sys.4chan.org/%s/post'  % board
@@ -92,7 +92,7 @@ while True:
 			while j < randint(2,5):
 				out+=choice(com)
 				j+=1
-			out+=choice(cv) 
+			out+=choice(cv)
 			out+= choice(co)
 			while k < randint(0,2):
 				out+=choice(com)
