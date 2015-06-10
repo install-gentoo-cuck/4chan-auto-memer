@@ -47,12 +47,14 @@ def hostCaptcha():
 	serv.serve_forever()
 thread.start_new_thread(hostCaptcha, ())
 
+board = raw_input('Select board: (no / /)\n')
+thread = raw_input('Select thread to shitpost:\n')
 sleep(1)
 while True:
 	cap = raw_input('Enter a captcha: ')
 	cv = ['tips fedora ', 'kill yourself ', 'desu ', 'jew ', 'nigger-rigged ', 'cucked ', 'tfw ', 'ITT: ', 'memed ', 'fizz buzzed ']
 	co = ['fedora ', 'jew ', 'nigger ', 'cuck ', 'reddit ', 'tumblr ', 'bane ', 'ITT: ', 'faggot ','meme ', 'autist ', 'waifu ', 'semen demon ', 'fizz buzz ', 'trap ',': the thread ', 'doge ', 'pleb ', 'feel ']
-	com = ['a shit', 'fedora tipping ', 'an-heroing ', 'JUST ', 'jew ', 'nigger ', 'cuck ', 'based ', 'reddit-tier ', 'tumblr-tier ', 'baneposting ', 'literally ', 'faggot ','meme ', 'autistic ', 'fizz buzz-tier ', 'shit tier ', 'god tier ',':the thread ', 'pleb ', 'for free ','objectively ' 'tbh ']
+	com = ['a shit', 'fedora tipping ', 'an-heroing ', 'JUST ', 'jew ', 'nigger ', 'cuck ', 'based ', 'reddit-tier ', 'tumblr-tier ', 'baneposting ', 'literally ', 'faggot ','meme ', 'autistic ', 'fizz buzz-tier ', 'shit tier ', 'god tier ',':the thread ', 'pleb ', 'for free ','objectively ']
 	cg = ['Argentina is white', 'jet fuel can\'t melt steel beams','install gentoo', 'ayy lmao', 'it\'s happening', 'REEEEEEEEEEEEEEEEEEEEEEEEEEE', 'huehuehuehuehue', 'umad?', '''>>>/pol/''']
 	go = ''
 	out = ''
@@ -71,4 +73,4 @@ while True:
 		i+=1
 	go += choice(cg) + '.'
 	go += '\n\n/thread'
-	print "R: " + str(createPost('g', '48431348', go, cap))
+	print "R: " + str(createPost(board, thread, go, cap))
